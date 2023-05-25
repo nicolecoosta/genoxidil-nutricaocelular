@@ -1,0 +1,276 @@
+/*HEADER*/
+.header-compreagora {
+  display: flex;
+  color: #111;
+  gap: 40px;
+  padding: 16px 0px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  justify-content: center;
+  position: relative;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+.header-contato-pagamento a:after {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #68b246;
+  margin-top: -19px;
+  margin-left: -23px;
+  position: absolute;
+  transition: 0.03s;
+  
+}
+
+.header-compreagora:before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 1600px;
+  background: #dedede;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+}
+
+  .header-compreagora li:hover{
+    font-size: 22px;
+    gap: 12px;
+    color: #539834;
+  }
+
+
+@media (max-width: 900px) {
+  .header-compreagora {
+   margin-bottom: -100px;
+   }
+   .header-compreagora:before {
+    display: none;
+  }
+}
+
+
+/*FOOTER*/
+.footer-bg{
+  background: #eee;;
+}
+
+@media screen and (max-width: 768px){
+  .footer-compreagora img{
+    margin-left: -160px;
+    margin-top: 40px;
+    margin-bottom: -20px;
+  }
+
+  .footer-contatocompre h3{
+    display: none;
+  }
+  .footer-informacoes-pagamento{
+    margin-top: 20px;
+  }
+
+}
+
+/*COMPRAR*/
+.compreaqui-bg{
+  background: linear-gradient(#fff 600px, #f7f7f7 0px);
+  padding-right: 60px;
+  padding-left: 120px;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.compreaqui-bg h1 {
+  color: #1C5EA7;
+  font-size: 44px;
+  margin-bottom: 60px;
+  white-space: nowrap;
+  grid-column: 1;
+  font-family: "Poppins";
+}
+
+.compreaqui-bg span {
+  color: #b2b2b2;
+  font-size: 20px;
+  font-family: "Roboto";
+}
+
+.compreaqui-bg h1 span {
+color: #68B246;
+font-size: 44px;
+}
+ /* FORMULÁRIO!!! */
+.compreaqui-dados {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  background: #e0e0e0;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.margem{
+  margin-bottom: 60px;
+}
+
+.compreaqui-dados h2{
+  color: #1C5EA7;
+  font-size: 18px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  grid-column: 1;
+}
+
+.compreaqui-dados h2:after {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #68B246;
+  margin-left: -20px;
+  margin-top: -15px;
+  position: absolute;
+  transition: 0.03s;
+}
+
+.botao-faledistribuidor{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-column: 1/-1;
+  align-items: center;
+  margin-bottom: 60px;  
+}
+
+.botao-faledistribuidor button{
+  margin-bottom: 20px; 
+  margin-top: 40px;
+}
+
+
+.form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form label{
+  display: block;
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+  margin-top: 4px;
+  color: #111; 
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input textarea {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  background: #fdfdfd;
+  padding: 6px;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form input textarea:focus {
+  outline: none;
+  border-color: #68B246;
+  cursor: pointer;
+  background: #fff;
+  box-shadow: 0 0 0 1px #68B246;
+  
+}
+
+.form input:hover{
+  background-color: #f2f2f2;
+  border-color: #68B246;
+}
+
+.form .col-1{
+  grid-column: 1;
+}
+
+.form .col-2{
+  grid-column: span 2;
+}
+
+
+/*MOBILE*/
+@media screen and (max-width: 900px){
+  .form{
+    grid-column: 1/-1;
+    border-radius: 4px 4px 0 0;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 40px;
+    
+  }
+  
+  }
+
+@media screen and (max-width: 768px){
+  .compreaqui-bg{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 60px;
+  }
+  .compreaqui-bg h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+  }
+  .compreaqui-bg span {
+    font-size: 16px;
+    margin-top: 7500px;
+  }
+  .compreaqui-bg h1 span {
+    font-size: 36px;
+    }
+    .compreaqui-dados {
+      border-radius: 4px 4px 0 0;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 40px;
+    }
+    .compreaqui-dados h2{
+      font-size: 16px;
+      white-space: nowrap;
+    }
+  .form{
+    grid-column: 1/-1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .form label {
+    grid-column: 1/-1;
+    font-size: 16px;
+  }
+  .form input[type="text"],
+  .form input[type="email"],
+  .form input textarea {
+    font-size: 16px;
+  }
+
+  .form .col-1 {
+    grid-column: 1/-1;
+  }
+
+  .form .col-3{
+    grid-column: 1/-1;
+  }
+}

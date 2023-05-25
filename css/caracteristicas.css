@@ -1,0 +1,601 @@
+.caracteristicas-bg{
+  background: #fff;
+  grid-template-columns: 1fr 1fr;
+ gap: 0px 40px;
+ box-sizing: border-box;
+ padding-left: 20px;
+ padding-right: 20px;
+ margin-left: auto;
+ margin-right: auto;
+ }
+ .prevencao-conteudo span{
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: right;
+  text-align: right;
+   color: #b2b2b2;
+  font-size: 20px;
+  font-family: "Roboto";
+  margin-bottom: 20px;
+  
+}
+
+
+/*PREVENÇÃO!!!*/
+.prevencao-conteudo {
+  padding-top: 60px;
+ padding-bottom: 60px;
+ display: grid;
+ grid-template-columns:1fr 1fr;
+ box-sizing: border-box;
+ max-width: 1200px;
+ padding-left: 20px;
+ padding-right: 20px;
+ margin-left: auto;
+ margin-right: auto;
+ position: relative;
+}
+
+.prevencao-conteudo h2 {
+  color: #1C5EA7;
+  font-size: 32px;
+  margin-bottom: 40px;
+  grid-column: 1/-1;
+  font-family: "Poppins";
+}
+
+.prevencao-conteudo h2::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #539834;
+  position: absolute;
+  margin-top: -16px;
+}
+
+.lista-conteudo{
+  grid-column: 2;
+  background-color: #e0e0e0;
+  color: #222;
+  line-height: 1.5;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  padding: 32px 32px 32px 0;
+ padding-left: 80px;
+ padding-top: 80px;
+ border-radius: 4px;
+ text-align: left;
+  position: relative;
+}
+
+.prevencao-conteudo img{
+margin-top: -363.5px;
+margin-left: 20px;
+z-index: 99999;
+}
+
+.lista-conteudo li{
+  font-size: 24px;
+  font-family: "Roboto";
+  line-height: 1.5;
+  white-space: nowrap;
+  margin-left: 40px;
+  padding: 12px;
+  position: relative;
+}
+
+.lista-conteudo li::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 20px;
+  background-image: url("/img/setinha.png");
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 8px;
+}
+
+.lista-conteudo a{
+margin-top: 40px;
+margin-right: 12px;
+}
+
+/*PREVENÇÃO-MOBILE*/
+@media screen and (max-width: 768px){
+  .caracteristicas-bg{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   }
+
+   .prevencao-conteudo span{
+    grid-template-columns: 1fr;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 12px;
+    margin-top: 20px;
+    
+  }
+
+.prevencao-conteudo {
+  max-width: 280px;
+  display: grid;
+  grid-template-columns: 1fr; 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+.prevencao-conteudo h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  grid-column: 1/-1;
+  text-align: left;
+  word-wrap: break-word;
+  margin-top: 10px;
+  max-width: 280px;
+}
+
+.prevencao-conteudo h2::before {
+  width: 6px;
+  height: 6px;
+  margin-top: -10px;
+}
+
+.lista-conteudo{
+  max-width: 280px;
+  display: grid;
+  grid-template-columns: 130px 130px;
+  position: relative;
+  padding-left: 20px;
+ padding-top: 20px;
+}
+.lista-conteudo li{
+  font-size: 16px;
+ margin-left: 20px;
+  margin-bottom: 4px;
+  text-align: left;
+  padding: 8px 8px 8px 8px;
+ }
+
+
+.lista-conteudo li::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 12px;
+  background-image: url("/img/setinha-mobile.svg");
+  position: absolute;
+  margin-left: -16px;
+  top: 6px;
+}
+.prevencao-conteudo img{
+  grid-column: 1;
+  position: absolute;
+  bottom: 53px;
+  left: 230px;
+  width: 70px;
+  height: 90px;
+  }
+  .lista-conteudo a{
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    }
+}
+
+/*22 ingredientes*/
+.ingredientes-conteudo {
+  padding-top: 60px;
+ padding-bottom: 60px;
+ display: grid;
+ grid-template-columns:1fr auto;
+ box-sizing: border-box;
+ max-width: 1200px;
+ padding-left: 20px;
+ padding-right: 20px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.ingredientes-conteudo h2 {
+  color: #1C5EA7;
+  font-size: 32px;
+  margin-bottom: 40px;
+  grid-column: 1;
+  font-family: "Poppins";
+}
+
+.ingredientes-conteudo p {
+  margin-bottom: 20px;
+  color: #111;
+  font-size: 22px;
+  font-family: "Roboto";
+  line-height: 1.5;
+  grid-column: 1;
+  text-align: center;
+  }
+
+  .ingredientes-conteudo .verde-negrito {
+    color: #539834;
+    font-weight: 600;
+    }
+
+.ingredientes-conteudo h2::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #539834;
+  position: absolute;
+  margin-top: -16px;
+}
+
+.lista-texto{
+  grid-column: 1;
+  background-color: #e0e0e0;
+  color: #222;
+  line-height: 1.5; 
+  padding: 32px 32px 32px 32px;
+ padding-left: 80px;
+ padding-top: 80px;
+ border-radius: 4px;
+ width: 750px;
+  padding-bottom: 80px;
+  grid-column: 1;
+  position: relative;
+}
+
+.ingredientes-conteudo img{
+grid-column: 2;
+z-index: 9999;
+width: 100%;
+margin-top: 120px;
+}
+
+.lista-texto li{
+   font-size: 24px;
+  font-family: "Roboto";
+  line-height: 1.5;
+  white-space: nowrap;
+  margin-left: 40px;
+  padding: 12px;
+  position: relative;
+}
+
+.lista-texto li::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 20px;
+  background-image: url("/img/setinha.png");
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 8px;
+}
+
+.ingredientes-conteudo a {
+  margin-top: 40px;
+}
+
+/*22 INGREDIENTES -MOBILE*/
+@media screen and (max-width: 768px){
+  .ingredientes-conteudo{
+    max-width: 280px;
+    padding-left: 20px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .ingredientes-conteudo h2::before {
+    width: 6px;
+    height: 6px;
+    margin-top: -10px;
+  
+  }
+  .lista-texto{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    max-width: 270px;
+    margin-left: 6px;
+    margin-right: auto;
+    margin-top: -40px;
+  }
+
+  .lista-texto h2{
+    font-size: 20px;
+    text-align: left;
+    margin-top: -50px;
+    
+  }
+  .lista-texto li{
+    font-size: 18px;
+    margin-bottom: 4px;
+    margin-left: 8px;
+  }
+  .lista-texto li::before {
+    width: 10px;
+    height: 12px;
+    background-image: url("/img/setinha-mobile.svg");
+    position: absolute;
+    margin-left: -18px;
+    margin-top: 6px;
+  }
+  .lista-texto p {
+    margin-bottom: 12px;
+    font-size: 20px;
+    text-align: justify;
+    }
+.ingredientes-conteudo img{
+  display: none;
+   }
+
+   .ingredientes-conteudo a{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+     }
+}
+
+
+/*certificações*/
+.certificacao-conteudo {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns:1fr auto;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+ padding-right: 20px;
+}
+
+.certificacao-conteudo .certificacao-texto{
+  background: #e0e0e0;
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  max-width: 800px;
+  border-radius: 5px;
+  grid-column: 2;
+}
+
+.certificacao-conteudo h2 {
+  color: #1C5EA7;
+  font-size: 32px;
+  margin-bottom: 40px;
+  grid-column: 2;
+  font-family: "Poppins";
+}
+
+.certificacao-conteudo p {
+  margin-bottom: 20px;
+  color: #222;
+  font-size: 22px;
+  font-family: "Roboto";
+  line-height: 1.5;
+  grid-column: 2;
+  }
+
+  .certificacao-conteudo b{
+    color: #539834;
+    }
+
+  .certificacao-texto h2::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #539834;
+    position: absolute;
+    margin-top: -16px;
+  }
+
+.certificacao-conteudo img{
+  grid-column: 1;
+  z-index: 9999;
+  width: 100%;
+  margin-left: -40px;
+  margin-top: -325px;
+}
+
+/*CERTIFICAÇÃO - MOBILE*/
+@media screen and (max-width: 768px){
+  .certificacao-conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-top: 20px;
+    text-align: left;
+    max-width: 320px;
+    padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: -40px;
+  margin-bottom: -20px;
+  }
+
+  .certificacao-conteudo .certificacao-texto{
+    
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    max-width: 500px;
+    border-radius: 5px;
+    grid-column: 2;
+  }
+  
+  .certificacao-conteudo h2 {
+    font-size: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .certificacao-conteudo p {
+    text-align: justify;
+    margin-bottom: 10px;
+    
+  }
+  .certificacao-texto h2::before {
+    width: 6px;
+    height: 6px;
+    margin-top: -10px;
+  }
+  .certificacao-conteudo img{
+   display: none;
+    }
+  }
+
+
+/*PROTEINA*/
+.proteina-bg{
+  background-image: url("/img/pilulas.svg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+   display: grid;
+  grid-template-columns: 1fr 1fr; 
+  padding-top: 60px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.proteina-conteudo {
+ width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-radius: 5px;
+  background: #e0e0e0;
+}
+
+.proteina-conteudo h2 {
+  color: #1C5EA7;
+  font-size: 32px;
+  margin-bottom: 40px;
+  grid-column: 1/-1;
+  font-family: "Poppins";
+  white-space: nowrap;
+}
+
+.proteina-conteudo p {
+  margin-bottom: 20px;
+  color: #222;
+  font-size: 12px;
+  font-family: "Roboto";
+  line-height: 1.5;
+  margin-top: 20px;
+  text-align: justify;
+  cursor: pointer;
+
+  }
+
+  .proteina-conteudo h2::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #539834;
+    position: absolute;
+    margin-top: -16px;
+  }
+
+  .textos{
+    display: flex;
+    flex-direction:row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+
+/*PROTEINA - MOBILE*/
+@media screen and (max-width: 768px){
+.proteina-bg{
+  max-width: 280px;
+    display: grid;
+    grid-template-columns: 1fr; 
+    background-position: left bottom;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+.proteina-conteudo {
+   display: grid;
+   grid-column: 1;
+   padding-right: 20px;
+   padding-left: 20px;
+   padding-top: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+ }
+ .proteina-conteudo h2 {
+  font-size: 20px;
+    margin-bottom: 20px;
+    word-break: break-all;
+    white-space:normal ; 
+  grid-column: 1;
+}
+.proteina-conteudo p {
+  grid-column: 1;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+   margin-top: 20px;
+
+  }
+  .proteina-conteudo h2::before {
+    width: 6px;
+    height: 6px;
+  }
+
+  .textos{
+    flex-direction:column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+ 
+}

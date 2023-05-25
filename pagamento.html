@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compre Agora | Genoxidil</title>
+  <meta name="description" content="Contato para compra">
+
+  <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    .whatsapp {
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      z-index: 9999;
+    }
+    #link-topo{
+    text-decoration: none;
+    color: #fff;
+    background: #68b246;
+    padding: 20px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    z-index: 9999;
+}
+    @media (max-width: 900px) {
+      .whatsapp {
+        width: 35px;
+        bottom: 10px;
+        right: 10px;
+      }
+      #link-topo{
+    display: none;
+    }
+  }
+  </style>
+
+<body>
+  <header class="logo">
+    <a href="./index.html">
+      <img src="./img/header-logo.icon.svg" alt="marca">
+    </a>
+
+    <nav>
+      <ul class="header-compreagora">
+        <li class="menu-pagamento"><a href="./index.html">Home</a></li>
+        <li class="menu-pagamento header-contato-pagamento"><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <form class="compreaqui-bg" id="form" action="./enviar.php"  method="POST">
+    <div>
+      <span>MEUS PEDIDOS</span>
+      <h1>compre aqui<span class="verde-negrito">.</span></h1>
+    </div>
+      <div class="compreaqui-dados form">
+        <h2 class="dados">Dados Pessoais</h2>
+        <div class="col-1 ">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" minlength="3" required placeholder="Seu nome">
+        </div>
+        <div class="col-3 ">
+          <label for="sobrenome">Sobrenome</label>
+          <input type="text" id="sobrenome" name="sobrenome" minlength="3" required placeholder="Seu sobrenome">
+        </div>
+        
+        <div class="col-2 ">
+          <label for="telefone">Telefone</label>
+          <input type="text" id="telefone" name="phone" minlength="10" required placeholder="21 9999-9999">
+        </div>
+        <div class="col-2 ">
+          <label for="email">E-mail</label>
+          <input type="text" id="email" name="email" minlength="3" required placeholder="contato@email.com">
+        </div>
+        <div class="col-2">
+          <label for="cep">CEP</label>
+          <input type="text" required id="cep" name="cep" minlength="3" placeholder="00.000-000">
+        </div>
+       <div class="botao-faledistribuidor">
+        <button href="https://whtss.co/draelis/api" type="submit" class="botao-cliente">FALE COM DISTRIBUIDOR</button>
+        
+        <img src="./img/compra-segura.svg" alt="comprasegura">
+        </div>
+      </div>
+    </form>
+    </main>
+
+    <footer class="footer-bg" id="contato">
+      <div class="footer footer-compreagora">
+        <img src="./img/genoxidillogo1.png" alt="" width="150" height="150">
+        <div class="footer-contato footer-contatocompre">
+          <h3>Contato</h3>
+          <ul>
+            
+            <a class="botao-wpp botao-compreagora" href="https://whtss.co/draelis/api" target="_blank"><img src="./img/BTN.svg" alt="Fale conosco pelo Whatsapp" title="Fale conosco pelo Whatsapp"></a>
+            </a>
+          </ul>
+        </div>
+
+        <div class="footer-informacoes footer-informacoes-pagamento">
+          <h3>Informações</h3>
+          <nav>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./index.html">Genoxidil</a></li>
+              <li><a href="./index.html">Compre Aqui</a></li>
+              <li><a href="./index.html">Quem Somos</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+    </footer>
+
+    <div class="whatsapp">
+      <a href="https://whtss.co/draelis/api" target="_blank">
+       <img src="./img/icon-wpp 1.svg" width="55" alt="Fale conosco pelo Whatsapp" title="Fale conosco pelo Whatsapp">
+       <a id="link-topo" href="">&#9650</a>
+     </a>
+    </div>
+
+    <script src="./script.js" type="module"></script>
+    <script src="./formulario.js" type="module"></script>
+</body>
+
+</html>

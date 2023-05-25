@@ -1,0 +1,255 @@
+.compre-bg{
+  padding-right: 60px;
+    padding-left: 120px;
+    padding-top: 120px;
+    position: relative;    
+    background: #f7f7f7;
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+}
+
+.compre-conteudo {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-right: 60px;
+  padding-bottom: 60px;
+  max-width: 1200px;
+ padding-left: 20px;
+ padding-right: 20px;
+ margin-left: auto;
+ margin-right: auto;
+  text-align: center;
+  position: relative;
+}
+
+
+
+.compre-conteudo  h1 {
+  color: #1C5EA7;
+  font-size: 44px;
+  margin-bottom: 60px;
+  grid-column: 2;
+  font-family: "Poppins";
+  text-align: right;
+}
+
+.compre-conteudo  h1 span{
+  color: #68B246;
+  font-size: 44px;
+  grid-column: 2;
+}
+
+.compre-conteudo  span {
+  color: #b2b2b2;
+  font-size: 20px;
+  font-family: "Roboto";
+  grid-column: 2;
+  text-align: right;
+}
+
+.compre-conteudo  p {
+  color: #EF5C2B;
+  font-size: 24px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  margin-top: -150px;
+  text-align: left;
+  margin-left: -40px;
+  }
+
+.compre-texto{
+  background-color: #e0e0e0;
+ padding-left: 60px;
+ padding-right: 80px;
+ padding-bottom: 60px;
+ padding-top: 40px;
+ border-radius: 4px;
+ max-width: 500px;
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.compre-texto h2{
+  color: #111;
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+
+.compre-texto b{
+  color: #EF5C2B;
+}
+
+.compre-texto li{
+  color: #222;
+  font-size: 24px;
+  font-family: "Roboto";
+  line-height: 1.5;
+  margin-left: 150px;
+  position: relative;
+  text-align: left;
+}
+.compre-texto li + li {
+  margin-top: 24px;
+}
+
+.compre-texto li::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 20px;
+  background-image: url("/img/setinha.png");
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 8px;
+}
+
+.compre-texto  a{
+  grid-column:1/-1;
+  margin-top: 60px;
+  margin-left: 200px;
+}
+ .compre-foto{
+  position: absolute;
+  top: 672px;
+  left: -80px;
+  width: 40%;
+ }
+
+
+/*COMPRAR - MOBILE*/
+@media screen and (max-width: 768px){
+  .compre-conteudo {
+    max-width: 280px;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-right: 60px;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .compre-conteudo  h1 {
+    font-size: 36px;
+    grid-column: 1/-1;
+    text-align: center;
+    white-space:nowrap;
+    margin-top: 10px;
+   margin-left: -120px;
+  }
+  .compre-conteudo  h1 span{
+    font-size: 36px;
+    grid-column: 1/-1;
+    margin-left: 0px;
+    margin-right: 0px;
+
+  }
+  .compre-conteudo  span {
+    grid-column: 1;
+    font-size: 18px;
+    text-align: center;
+    margin-left: -140px;
+    margin-right: -20px;
+    margin-top: -60px;
+  }
+  .compre-conteudo  p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: -40px;
+    margin-left: -120px;
+    margin-right: -10px;
+    }
+
+    .compre-texto{
+     width: 240px;
+     padding-left: 20px;
+     padding-right: 20px;
+     padding-top: 20px;
+      grid-column: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      margin-left: -95px;
+      margin-bottom: -10px;
+    }
+    .compre-texto h2{
+      font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    grid-column: 1;
+    }
+    .compre-texto li{
+      font-size: 20px;
+      word-wrap: break-word;
+      margin-left: 20px;
+      margin-top: 10px;
+      position: relative;
+
+    }
+
+    .compre-texto .frete{
+      margin-left: -90px;
+    }
+    .compre-texto li + li {
+      margin-top: 12px;
+    }
+    .compre-texto li::before {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 12px;
+      background-image: url("/img/setinha-mobile.svg");
+      position: absolute;
+      margin-left: -20px;
+      margin-top: 8px;
+    }
+    .compre-texto  a{
+      display: inline-block;
+      grid-template-columns: 1fr;
+      grid-column: 1;
+      margin-top: 30px;
+      margin-left: 10px;
+      margin-bottom: -30px;
+    }
+    .compre-bg img {
+      display: none;
+    }
+    .header-compreagora{
+      padding: 0px;
+      margin-top: 40px;
+      margin-bottom: px;
+    }
+    .header-compreagora li{
+      opacity: 0;
+      margin-bottom: -60px;
+    }
+    .header-compreagora::before {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 1600px;
+      background: #dedede;
+      position: absolute;
+      top: 100px;
+    } 
+    .footer-compreagora img {
+      grid-column: 1/-1;
+    width: 75px;
+    height: 75px;
+    padding-left: 165px;
+    padding-right: -140px;
+    margin-top: -20px;
+  }
+  .footer-contatocompre .botao-compreagora{
+    display: none;
+  }
+}
+

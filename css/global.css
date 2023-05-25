@@ -1,0 +1,515 @@
+/*global*/
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  text-decoration: none;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+p,
+blockquote {
+  margin: 0px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/*header*/
+.header-menu {
+  display: flex;
+  color: #111;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 40px;
+  font-size: 18px;
+  position: relative;
+  font-family: "Poppins";
+  font-weight: 400;
+  white-space: nowrap;
+  margin-bottom: 120px;
+}
+
+.header-menu li:hover{
+  font-size: 22px;
+  color: #539834;
+}
+
+.header-menu a{
+  padding: 16px 0px;
+  display: inline-block;
+}
+
+.header-funcionamento a:after {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #68b246;
+  margin-top: -19px;
+  margin-left: -25px;
+  position: absolute;
+  transition: 0.03s;
+}
+
+.header-depoimentos a:after {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #68b246;
+  margin-top: -19px;
+  margin-left: -22px;
+  position: absolute;
+  transition: 0.03s;
+}
+
+.header-compra a:after {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #68b246;
+  margin-top: -19px;
+  margin-left: -20px;
+  position: absolute;
+  transition: 0.03s;
+}
+
+.header-caracteristicas a:after {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #68b246;
+  margin-top: -19px;
+  margin-left: -22px;
+  position: absolute;
+  transition: 0.03s;
+}
+.header-contato a:after {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #68b246;
+  margin-top: -19px;
+  margin-left: -23px;
+  position: absolute;
+  transition: 0.03s;
+}
+
+.header-menu:before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 1600px;
+  background: #dedede;
+  position: absolute;
+  bottom: -40px;
+}
+
+.logo img {
+  margin-top: 20px;
+  width: 100%;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .logo img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 700px;
+   min-width: 360px;
+   margin-top: 5px;
+  }
+ 
+   .header-menu{
+   margin-bottom: 20px;
+  }
+   #menu {
+     display: none;
+   }
+   .header-contato{
+     display: none;
+   }
+   .header-menu:before {
+     display: none;
+   }
+   .mobile-menu-icon {
+     display: block;
+ }
+ .mobile-menu-icon button {
+     background-color: transparent;
+     border: none;
+     cursor: pointer;
+     margin-top: 12px;
+ }
+ .mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 1rem;
+ }
+ .mobile-menu .nav-item {
+   display: block;
+   padding-top: 1.2rem;
+ }
+ .open {
+   display: block;
+ }
+ .nav-item  li + li  {
+   margin-top: 10px;
+ }
+ 
+ .nav-item li{
+   padding: 1rem 0;
+   margin: 0 1rem;
+   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+ }
+ 
+ .nav-item li:hover{
+   font-size: 22px;
+   gap: 12px;
+   color: #539834;
+ }
+ 
+ .header-compra a:after {
+   display: none;
+ }
+ 
+}
+
+/*botão*/
+.botao-cliente {
+  display: inline-block;
+  white-space: nowrap;
+  background: linear-gradient(to bottom, #ff4305, #FF551C);
+  padding: 30px 32px;
+  color: #fefefe;
+  font-size: 22px;
+  font-family: "Poppins";
+  font-weight: 600;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  max-width: max-content;
+  border: none;
+  cursor: pointer;
+}
+
+.flash-cliente{
+  animation-name: flash-cliente;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+@keyframes flash-cliente{
+0%{
+  background: linear-gradient(to bottom, #ff4305, #FF551C);
+ }
+50%{
+  background: #FF551D;
+  
+}
+100%{
+  background: linear-gradient(to bottom, #ff4305, #FF551C);
+
+}
+}
+
+.flash-distribuidor{
+  animation-name: flash-distribuidor;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  
+}
+@keyframes flash-distribuidor{
+0%{
+  background: linear-gradient(to bottom, #539834, #68b246);
+  
+}
+50%{
+  background: #64B93D;
+}
+100%{
+  background: linear-gradient(to bottom, #539834, #68b246);
+}
+}
+.botao-cliente:hover {
+  background: linear-gradient(to bottom, #FF4000, #ff4305);
+}
+
+.botao-distribuidor {
+  display: inline-block;
+  white-space: nowrap;
+  background: linear-gradient(to bottom, #539834, #68b246);
+  padding: 30px 32px;
+  color: #111;
+  font-size: 24px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  font-weight: 600;
+  max-width: max-content;
+  border: none;
+  cursor: pointer;
+}
+
+.botao-distribuidor:hover {
+  background: linear-gradient(to bottom, #4EAB25, #539834);
+}
+
+/*FOOTER*/
+
+.footer img {
+  margin-bottom: auto;
+  margin-top: auto;
+  align-items: center;
+}
+
+.footer {
+  display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 0px 40px;
+   box-sizing: border-box;
+   max-width: 1200px;
+   padding-left: 20px;
+   padding-right: 20px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.footer-contato {
+  grid-column: 2;
+  position: relative;
+}
+
+.footer-contato h3 {
+  color: #111;
+  font-size: 20px;
+  font-family: "Roboto";
+  grid-column: 2;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  margin-top: 80px;
+}
+
+
+.footer-informacoes{
+  margin-bottom: 60px;
+}
+
+.footer-informacoes h3 {
+  color: #111;
+  font-size: 20px;
+  font-family: "Roboto";
+  grid-column: 3;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  text-transform: uppercase;
+}
+
+.footer-informacoes li {
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 400;
+  color: #222;
+  position: relative;
+  grid-column: 3;
+ 
+}
+
+.footer-informacoes li + li {
+  margin-top: 24px;
+}
+
+
+
+/*MOBILE FOOTER*/
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer img {
+    padding-left: 0px;
+    margin-top: 20px;
+    align-items: center;
+  } 
+  .footer .logo {
+    grid-column: 1;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+   }
+
+  .footer-contato {
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-contato h3 {
+    font-size: 16px;
+   align-items: center;
+   margin-left: 0px;
+   margin-bottom: 20px;
+  }
+
+  .footer-contato li{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+
+  .footer-contato .tel{
+    margin-left: -40px;
+  }
+
+    .footer-contato li:nth-child(1) ::after {
+      content: "";
+      display: block;
+      width: 13px;
+      height: 10.27px;
+      background-image: url("../img/telefone-mobile.svg");
+      position: absolute;
+      margin-left: -20px;
+      bottom: 5px;
+    }
+  
+    .footer-contato li:nth-child(2) ::after {
+      content: "";
+      display: block;
+      max-width: 14px;
+      height: 11.2px;
+      background-image: url("../img/email-mobile.svg");
+      margin-left: -20px;
+      position: relative;
+      bottom: -16px;
+    }
+
+  .footer-informacoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-informacoes h3 {
+    align-items: center;
+    margin-top: 60px;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .footer-informacoes li {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  margin-left: 0px;
+  margin-top: -20px;
+  }
+
+  .footer-informacoes li + li {
+    margin-top: 12px;
+  }
+
+.botao-wpp {
+ width: 50%;
+}
+}
+
+/*MOBILE BOTAO*/
+@media (max-width: 1200px) {
+  .botao-cliente {
+    padding: 22px 22px;
+    font-size: 18px;
+  }
+  .botao-distribuidor {
+    padding: 50px 24px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .botao-cliente {
+    padding: 24px 26px;
+    font-size: 16px;
+  }
+  .botao-distribuidor {
+    padding: 22px 24px;
+    font-size: 18px;
+    
+  }
+}
+
+

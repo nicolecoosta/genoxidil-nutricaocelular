@@ -1,0 +1,173 @@
+.genoxidil-bg {
+  background: #eeee;  
+}
+
+.genoxidil{
+ padding-top: 60px;
+ padding-bottom: 60px;
+ display: grid;
+ grid-template-columns:1fr 1fr;
+ box-sizing: border-box;
+ max-width: 1200px;
+ padding-left: 20px;
+ padding-right: 20px;
+ margin-left: auto;
+ margin-right: auto;
+  }
+
+
+.genoxidil span {
+  color: #b2b2b2;
+  font-size: 20px;
+  font-family: "Roboto";
+
+}
+
+
+.genoxidil-conteudo{
+ grid-column: 1;
+ margin-top: 40px;
+  display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.foto-genoxidil{
+  grid-column: 2;
+  width: 100%;
+  margin-left: 10px;
+  width: 350px;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.genoxidil-item {
+  background: #e0e0e0;
+  padding: 32px 32px 32px 60px;
+  display: grid;
+  grid-template-columns:  1fr auto;
+  gap: 40px;
+ box-sizing: border-box;
+ max-width: 1200px;
+ padding-left: 60px;
+ padding-right: 60px;
+ padding-top: 20px;
+ margin-left: auto;
+ margin-right: auto;
+ text-align: center;
+ border-radius: 4px;
+ display: flex;
+ flex-direction: column;
+}
+
+.genoxidil-item img{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+.genoxidil-item li{
+  grid-column: 1/-1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #222;
+  font-size: 24px;
+  font-family: "Roboto";
+  font-weight: 600;
+  line-height: 1.5;
+  margin-left: 60px;
+    
+}
+
+.genoxidil-item li + li{
+  margin-top: 12px;
+}
+
+.genoxidil-item li::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 20px;
+  background-image: url("/img/setinha.png");
+  position: absolute;
+  left: -40px;
+}
+  .botao{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 40px;
+   margin-bottom: 40px;
+   margin-top: 20px;
+  }
+
+  @media screen and (max-width: 768px){
+    .genoxidil{
+       grid-template-columns: 1fr;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+    }
+    
+    .genoxidil h1 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      }
+    
+    .genoxidil span {
+      font-size: 18px;
+      margin: 0px;
+    }
+      
+       .foto-genoxidil{
+         display: none;
+       }
+       
+      .genoxidil-item {
+       max-width: 300px;
+       padding: 12px 12px 12px 20px;
+      }
+
+      .genoxidil-item li{
+        font-size: 18px;
+        word-wrap: break-word;
+        position: relative;
+        margin-top: -40px;
+        margin-left: 16px;
+        text-align: left;
+      }
+
+      .genoxidil-item li + li {
+        margin-top: 6px;
+      }
+    
+      .genoxidil-item li::before {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 12px;
+        background-image: url("/img/setinha-mobile.svg");
+        position: absolute;
+        margin-left: 16px;
+        top: 8px;
+      }
+      .botao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: -10px;
+        gap: 20px;
+      }
+  }
+  

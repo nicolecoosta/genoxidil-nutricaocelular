@@ -1,0 +1,121 @@
+.laboratorio-bg {
+  background: #f7f7f7;
+}
+.laboratorio {
+  display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 0px 40px;
+ box-sizing: border-box;
+ max-width: 1200px;
+ padding-left: 20px;
+ padding-right: 20px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.laboratorio-conteudo span {
+  color: #b2b2b2;
+  font-size: 20px; 
+  font-family: "Roboto";
+  grid-column: 2;
+  display: flex;
+  justify-content: right;
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+
+.laboratorio-conteudo h1 {
+  color: #1C5EA7;
+  font-size: 44px;
+  font-family: "Poppins";
+  margin-bottom: 40px;
+  text-align: right;
+  grid-column: 2;
+}
+
+.laboratorio-conteudo h1 b {
+color: #68B246;
+font-size: 44px;
+}
+
+.laboratorio-conteudo p {
+margin-bottom: 20px;
+color: #111;
+font-size: 22px;
+font-family: "Roboto";
+line-height: 1.5;
+text-align: right;
+grid-column: 2;
+}
+
+.laboratorio-conteudo p b {
+  color: #68B246;
+  font-weight: bold;
+  font-size: 24px;
+  }
+
+  .laboratorio iframe{
+    grid-column: 1;
+    border-radius: 4px;
+    grid-row: 1/3;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+  }
+
+   /*MOBILE */
+   @media screen and (max-width: 768px){
+.laboratorio{
+    display: grid;
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   }
+   .laboratorio-conteudo span {
+    grid-column: 1/-1;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+    margin-top: -30px;
+   }
+   .laboratorio-conteudo h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+   }
+   .laboratorio-conteudo h1 b {
+    grid-column: 1;
+    font-size: 36px;
+   }
+   .laboratorio-conteudo p {
+    grid-column: 1;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: -40px;
+   }
+   .laboratorio-conteudo p b {
+    text-align: center;
+    font-size: 20px;
+    grid-column: 1;
+    word-wrap: break-word;
+   }
+
+    .laboratorio iframe{
+      width: 500px;
+      height: 250px;
+      grid-row: 3/3;
+    } 
+ }
+
+ @media (max-width: 600px){
+  .laboratorio iframe{
+    width: 300px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ }

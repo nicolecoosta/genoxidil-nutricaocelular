@@ -1,0 +1,33 @@
+@import "./global.css";
+
+/*home*/
+@import "./home.css";
+
+/*laboratorio*/
+@import "./laboratorios.css";
+
+/*genoxidil*/
+@import "./genoxidil.css";
+
+/*características*/
+@import "./caracteristicas.css";
+
+/*COMPRE AGORA*/
+@import "./comprar.css";
+
+/*FUNCIONAMENTO*/
+@import "./funcionamento.css";
+
+/*DEPOIMENTOS*/
+@import "./depoimentos.css";
+
+/*QUEM SOMOS*/
+@import "./quemsomos.css";
+
+/*PAGAMETNTO*/
+@import "./pagamento.css";
+
+/*OBRIGADO!*/
+@import "./obrigada.css"
+/*formulario fonte*/
+

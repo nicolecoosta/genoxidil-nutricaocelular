@@ -1,0 +1,172 @@
+.quemsomos-bg{
+  background: #f7f7f7;
+}
+
+.quemsomos-conteudo{
+  display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 0px 40px;
+   box-sizing: border-box;
+   max-width: 1200px;
+   padding-left: 20px;
+   padding-right: 20px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.quemsomos-conteudo  span {
+  color: #b2b2b2;
+  font-size: 20px;
+  font-family: "Roboto";
+  grid-column: 1/-1;
+  margin-top: 120px;
+  margin-left: 350px;
+}
+
+.quemsomos-conteudo h1 {
+  color: #1C5EA7;
+  font-size: 44px;
+  font-family: "Poppins";
+  margin-bottom: 40px;
+  margin-left: 350px;
+  grid-column: 1/-1;
+}
+
+.quemsomos-conteudo  h1 span {
+  color: #68B246;
+  font-size: 44px;
+  margin-left: 0;
+  }
+
+  .quemsomos-conteudo p {
+    margin-bottom: 20px;
+    color: #111;
+    font-size: 22px;
+    font-family: "Roboto";
+    line-height: 1.5;
+    grid-column: 2;
+    }
+    
+    .quemsomos-conteudo b {
+      margin-bottom: 20px;
+      color: #539834;
+      font-size: 24px;
+
+      }
+
+  .quemsomos-conteudo .foto-quem{
+    grid-column: 1;
+    margin-top: -450px;
+  }
+
+  .quemsomos-conteudo .foto-locais{
+    grid-column: 2;
+    margin-top: 60px;
+    margin-bottom: 120px;
+  }
+
+    /*MOBILE */
+    @media screen and (max-width: 768px){
+  .quemsomos-conteudo{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: -80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .quemsomos-conteudo  span {
+    grid-column: 1;
+    font-size: 18px;
+    margin-left:0px;
+    margin-top: 40px;
+    white-space: nowrap;
+  }
+  .quemsomos-conteudo h1 {
+    grid-column: 1;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: -20px;
+    margin-top: 12px;
+  }
+  .quemsomos-conteudo p {
+    grid-column: 1;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: -20px;
+    font-size: 20px;
+    margin-top: 6px;
+    grid-column: 1;
+    }
+    .quemsomos-conteudo b {
+      font-size: 20px;
+      }
+      .quemsomos-conteudo .foto-quem{
+        grid-column: 1;
+        margin-top: -830px;
+        margin-left: -60px;
+        width: 150px;
+        height: 160px;
+      }
+      .quemsomos-conteudo .foto-locais{
+        grid-column: 1/-1;
+        margin-top: 20px;
+        margin-bottom: 40px;
+
+      }
+}
+    @media screen and (max-width: 768px){
+  .quemsomos-conteudo{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: -80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .quemsomos-conteudo  span {
+    grid-column: 1;
+    font-size: 18px;
+    margin-left:0px;
+    margin-top: 40px;
+    white-space: nowrap;
+  }
+  .quemsomos-conteudo h1 {
+    grid-column: 1;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: -20px;
+    margin-top: 12px;
+  }
+  .quemsomos-conteudo p {
+    grid-column: 1;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: -20px;
+    font-size: 20px;
+    margin-top: 6px;
+    grid-column: 1;
+    }
+    .quemsomos-conteudo b {
+      font-size: 20px;
+      }
+      .quemsomos-conteudo .foto-quem{
+       display: none;
+      }
+      .quemsomos-conteudo .foto-locais{
+        grid-column: 1/-1;
+        margin-top: 20px;
+        margin-bottom: 40px;
+
+      }
+}
